@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
-RELEASES="https://github.com/htop-dev/htop/releases"
-
 VERSION="v4.20.1"
-BINARY="yq_linux_amd64"
-DOWNLOAD_URL="https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}"
-YQ_BIN="/bin/yq"
+ARCH="amd64"
+RELEASES="https://github.com/mikefarah/yq/releases"
+DOWNLOAD_URL="${RELEASES}/download/${VERSION}/yq_linux_${ARCH}"
+EXECUTABLE_PATH="/bin/yq"
 
 echo "Downloading yq binary"
-curl -sSL -o "$YQ_BIN" "$DOWNLOAD_URL" 
-chmod a+x "$YQ_BIN" 
+curl -sSL -o "$EXECUTABLE_PATH" "$DOWNLOAD_URL" 
+chmod a+x "$EXECUTABLE_PATH" 
 
 yq --version
 if [ $? -eq 0 ]
@@ -18,5 +17,6 @@ then
 	rm -rf "$DOWNLOAD_DIR" || echo "Error deleting folder $DOWNLOAD_DIR"
 else
 	echo "Error installing yq-${VERSION}"
+	exit 1
 fi
 
