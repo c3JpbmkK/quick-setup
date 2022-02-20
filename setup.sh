@@ -10,5 +10,5 @@ fi
 for installer in $(ls -1 ./scripts/*.sh)
 do
 	echo "Using ${installer}"
-	./scripts/"${installer}"
+	"${installer}"
 done
