@@ -2,11 +2,7 @@
 
 set -eo pipefail
 
-if [ -d /usr/local ]
-then
-	mkdir -p /usr/local
-fi
-
+mkdir -p /usr/local
 for installer in $(ls -1 ./scripts/*.sh)
 do
 	echo "Using ${installer}"
