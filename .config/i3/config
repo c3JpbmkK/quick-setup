@@ -196,10 +196,10 @@ bar {
     separator  #666666
 
     focused_workspace  #000000 #FFFFFF #000000
-    active_workspace   #FFFFFF #000000 #FFFFFF
-    inactive_workspace #FFFFFF #000000 #FFFFFF
-    urgent_workspace   #FFFFFF #DB3279 #000000
-    binding_mode       #FFFFFF #A07CBC #000000
+    active_workspace   #000000 #000000 #FFFFFF
+    inactive_workspace #000000 #000000 #FFFFFF
+    urgent_workspace   #000000 #DB3279 #000000
+    binding_mode       #000000 #A07CBC #000000
   }
   status_command i3status
   tray_output none
