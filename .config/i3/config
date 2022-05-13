@@ -179,11 +179,33 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# i3bar
-#bar {
-#        status_command i3status
-#	tray_output none
-#}
+# class                 border  bground text    indicator child_border
+client.focused          #000000 #000000 #ffffff #2e9ef4   #000000
+client.focused_inactive #5b5b5b #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #5b5b5b #5b5b5b #ffffff #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+  colors {
+    background #000000
+    statusline #FFFFFF
+    separator  #666666
+
+    focused_workspace  #000000 #FFFFFF #000000
+    active_workspace   #FFFFFF #000000 #FFFFFF
+    inactive_workspace #FFFFFF #000000 #FFFFFF
+    urgent_workspace   #FFFFFF #DB3279 #000000
+    binding_mode       #FFFFFF #A07CBC #000000
+  }
+  status_command i3status
+  tray_output none
+}
+
+exec --no-startup-id xdg-user-dirs-update
 
 # Disable Focus follows mouse
 focus_follows_mouse no
@@ -197,12 +219,3 @@ exec --no-startup-id gnome-terminal
 
 assign [class="Firefox"] 2
 exec --no-startup-id firefox
-
-# Changing colors
-client.focused          #000000 #000000 #ffffff #2e9ef4   #000000
-client.focused_inactive #5b5b5b #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #5b5b5b #5b5b5b #ffffff #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff
-
