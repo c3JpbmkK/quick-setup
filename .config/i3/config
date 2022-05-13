@@ -180,14 +180,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # i3bar
-bar {
-        status_command i3status
-	tray_output none
-}
-
-
-# Stat polybar instead
-# exec --no-startup-id "polybar custom"
+#bar {
+#        status_command i3status
+#	tray_output none
+#}
 
 # Disable Focus follows mouse
 focus_follows_mouse no
