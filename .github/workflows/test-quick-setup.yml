@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run setup script
-        run: sudo ./setup.sh
+        run: sudo ./installer.sh
