@@ -25,4 +25,3 @@ else
 	echo "Error installing go-${VERSION}"
 	exit 1
 fi
-

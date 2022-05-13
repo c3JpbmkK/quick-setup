@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="v4.20.1"
+VERSION="v4.25.1"
 ARCH="amd64"
 RELEASES="https://github.com/mikefarah/yq/releases"
 DOWNLOAD_URL="${RELEASES}/download/${VERSION}/yq_linux_${ARCH}"
@@ -19,4 +19,3 @@ else
 	echo "Error installing yq-${VERSION}"
 	exit 1
 fi
-

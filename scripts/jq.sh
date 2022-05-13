@@ -19,4 +19,3 @@ else
 	echo "Error installing jq-${VERSION}"
 	exit 1
 fi
-

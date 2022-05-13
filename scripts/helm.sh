@@ -41,5 +41,3 @@ else
 	echo "Error installing helm-${VERSION}"
 	exit 1
 fi
-
-

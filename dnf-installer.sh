@@ -7,7 +7,7 @@ then
 	mkdir -p /usr/local
 fi
 
-for installer in $(ls -1 ./scripts/*.sh)
+for installer in $(ls -1 ./dnf/*.sh)
 do
 	echo "Using ${installer}"
 	"${installer}"

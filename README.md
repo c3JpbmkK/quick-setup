@@ -1,7 +1,8 @@
 # Install some CLI tools
 
-## Required dependencies
+## Dependencies
 
-RHEL/Fedora  
+### RHEL/Fedora  
 1. @Development tools  
 2. ncurses-devel  
+3. libxkbcommon-devel

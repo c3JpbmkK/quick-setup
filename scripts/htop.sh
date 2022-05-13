@@ -34,5 +34,3 @@ else
 	echo "Error installing htop-${VERSION}"
 	exit 1
 fi
-
-

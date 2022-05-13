@@ -29,4 +29,3 @@ else
 	echo "Error installing code-${VERSION}"
 	exit 1
 fi
-

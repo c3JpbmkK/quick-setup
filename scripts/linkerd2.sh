@@ -38,5 +38,3 @@ else
 	echo "Error installing linkerd-${VERSION}"
 	exit 1
 fi
-
-
