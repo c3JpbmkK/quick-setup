@@ -215,7 +215,7 @@ exec --no-startup-id feh --no-fehbg --bg-fill /usr/share/backgrounds/fedora-work
 
 # Window assignments
 assign [class="Gnome-terminal"] 1
-exec --no-startup-id gnome-terminal
+exec --no-startup-id i3-sensible-terminal 
 
 assign [class="Firefox"] 2
 exec --no-startup-id firefox
