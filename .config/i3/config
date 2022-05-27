@@ -205,6 +205,9 @@ bar {
   status_command i3status
 }
 
+# Autostart on startup section
 exec --no-startup-id xdg-user-dirs-update
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
+
+# Custom key modifiers
 bindsym $mod+i exec "loginctl lock-session"
