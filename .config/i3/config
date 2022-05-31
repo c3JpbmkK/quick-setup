@@ -210,7 +210,7 @@ exec --no-startup-id xdg-user-dirs-update
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 
 # Custom key modifiers
-bindsym $mod+i exec "loginctl lock-session"
+bindsym Mod4+l exec "loginctl lock-session"
 
 # Background setup
 exec --no-startup-id feh --no-fehbg --bg-fill /etc/lightdm/Wallpapers/windows-2560x1440.jpg
@@ -218,3 +218,6 @@ exec --no-startup-id feh --no-fehbg --bg-fill /etc/lightdm/Wallpapers/windows-25
 # Window assignments
 assign [class="^Microsoft Teams - Preview$"] 1
 assign [class="^Slack$"] 1
+
+# Disable focus follows mouse
+focus_follows_mouse no
