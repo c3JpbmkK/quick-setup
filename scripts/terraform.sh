@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION="1.1.6"
+VERSION="1.2.1"
 ARCH="amd64"
 TF_DOWNLOAD_URL="https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_${ARCH}.zip"
 EXECUTABLE_PATH="/bin/terraform"
@@ -19,9 +19,9 @@ mv ./terraform /bin/terraform
 terraform version
 if [ $? -eq 0 ]
 then
-	echo "Installed go-${VERSION}"
+	echo "Installed terraform-${VERSION}"
 	rm -rf "$DOWNLOAD_DIR" || echo "Error deleting folder $DOWNLOAD_DIR"
 else
-	echo "Error installing go-${VERSION}"
+	echo "Error installing terraform-${VERSION}"
 	exit 1
 fi
